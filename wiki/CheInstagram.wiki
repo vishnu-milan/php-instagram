@@ -5,3 +5,4 @@ CheInstagram provide you a simple way for accessing Instagr.am API. it is a wrap
 You can find more about API [http://instagram.com/developer/ here].
 
 = Example =
+[https://code.google.com/p/php-instagram/source/browse/trunk/example.php See]
