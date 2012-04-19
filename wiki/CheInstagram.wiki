@@ -1,0 +1,7 @@
+= Introduction =
+
+CheInstagram provide you a simple way for accessing Instagr.am API. it is a wrapper for API calls to Instagr.am.
+
+You can find more about API [http://instagram.com/developer/ here].
+
+= Example =
