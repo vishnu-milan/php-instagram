@@ -5,7 +5,7 @@
 * @author Ilya Chekalskiy <ilya@chekalskiy.ru>
 * @author Jaisen Mathai <jaisen@jmathai.com>
 * 
-* @version 0.9.1
+* @version 0.9.2
 * @link http://instagram.com/developer
 * @link http://github.com/jmathai/php-multi-curl
 */
@@ -57,7 +57,7 @@ class CheInstagram {
      */
     public function getAuthorizeUrl($redirectUri, $scope = array()) {
         if ($scope && count($scope))
-            $scope = array('scope' => implode('+', $scope));
+            $scope = array('scope' => implode(' ', $scope));
         else $scope = array();
         
         $params = array_merge(array('client_id' => $this->clientId, 'response_type' => 'code', 'redirect_uri' => $redirectUri), $scope);
