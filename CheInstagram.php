@@ -5,7 +5,7 @@
 * @author Ilya Chekalskiy <ilya@chekalskiy.ru>
 * @author Jaisen Mathai <jaisen@jmathai.com>
 * 
-* @version 0.9.2
+* @version 0.9.3
 * @link http://instagram.com/developer
 * @link http://github.com/jmathai/php-multi-curl
 */
@@ -123,7 +123,7 @@ class CheInstagram {
         $params['client_id']     = $this->clientId;
         $params['client_secret'] = $this->clientSecret;
         
-        if($method === 'GET')
+        if($method === 'GET' || $method === 'DELETE')
             $url .= is_null($params) ? '' : '?'.http_build_query($params, '', '&');
                     
         $ch  = curl_init($url);
